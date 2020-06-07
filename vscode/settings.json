@@ -1,0 +1,14 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Gruvbox Dark (Hard)",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "editor.fontFamily": "'input mono'",
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "editor.multiCursorModifier": "alt"
+}
