@@ -1,4 +1,4 @@
-# vscodesettings
+# Vim Settings
 
 vim settings
 
