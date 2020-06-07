@@ -1,4 +1,4 @@
-# vscodesettings
+# Visual Studio Code Settings
 vscode keybindings and settings
 
 
