@@ -8,7 +8,11 @@ export ZSH="/home/hibrit/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
+autoload -U colors && colors
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,6 +83,7 @@ plugins=(
     copydir
     zsh_reload
     thefuck
+    fzf-zsh
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,4 +114,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshrc="vim ~/.zshrc"
+alias chillpop="mpv 'https://www.youtube.com/watch?v=5yx6BWlEVcY'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
