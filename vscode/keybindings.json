@@ -67,5 +67,19 @@
     {
         "key": "ctrl+[Backquote]",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "python.execInTerminal"
     }
 ]
