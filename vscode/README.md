@@ -11,7 +11,7 @@ Virtual Studio Code --> yay -S visual-studio-code-bin
   -- Gruvbox
   -- material-icon-theme  
 
-Input Fonts -->  yay -S tty-input
+Input Fonts -->  yay -S ttf-input
  
 
 
