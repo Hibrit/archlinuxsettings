@@ -5,7 +5,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
-    "editor.fontFamily": "'input mono'",
+    "editor.fontFamily": "Fira Code",
     "editor.formatOnSave": true,
     "prettier.tabWidth": 4,
     "editor.fontLigatures": true,
