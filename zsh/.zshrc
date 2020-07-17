@@ -83,7 +83,7 @@ plugins=(
     copydir
     zsh_reload
     thefuck
-    fzf-zsh
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,4 +115,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshrc="vim ~/.zshrc"
 alias chillpop="mpv 'https://www.youtube.com/watch?v=5yx6BWlEVcY'"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
