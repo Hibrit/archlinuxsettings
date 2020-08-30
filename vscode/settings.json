@@ -11,5 +11,6 @@
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
     "editor.multiCursorModifier": "alt",
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "terminal.integrated.fontFamily": "MesloLGS Nerd Font"
 }
