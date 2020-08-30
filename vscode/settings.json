@@ -10,5 +10,6 @@
     "prettier.tabWidth": 4,
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
-    "editor.multiCursorModifier": "alt"
+    "editor.multiCursorModifier": "alt",
+    "keyboard.dispatch": "keyCode"
 }
