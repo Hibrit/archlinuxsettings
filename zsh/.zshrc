@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/hibrit/.oh-my-zsh"
 
+# Path variable
+export PATH=~/.gem/ruby/2.7.0/bin:$PATH
+
 plugins=(
     archlinux
     git
@@ -26,9 +29,15 @@ alias gs="git status"
 alias grr="git remote remove origin"
 alias gra="git remote add origin"
 
+# ls alises
+alias ls="colorls --sd"
+alias ll="colorls -Al --sd"
+alias l="colorls -A --sd"
+
 # Custom
 alias zshrc="vim ~/.zshrc"
 alias chillpop="mpv 'https://www.youtube.com/watch?v=5yx6BWlEVcY'"
+alias sb="brightnessctl -d intel_backlight s"
 
 # VS Code custom shortcuts
 alias codei3="code ~/.config/i3/"
