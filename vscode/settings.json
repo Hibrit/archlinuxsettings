@@ -1,7 +1,7 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 2,
-    "workbench.colorTheme": "Gruvbox Dark (Hard)",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
@@ -12,5 +12,6 @@
     "editor.renderWhitespace": "all",
     "editor.multiCursorModifier": "alt",
     "keyboard.dispatch": "keyCode",
-    "terminal.integrated.fontFamily": "MesloLGS Nerd Font"
+    "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+    "editor.wordWrap": "on",
 }
