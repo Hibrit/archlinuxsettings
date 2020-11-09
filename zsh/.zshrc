@@ -46,6 +46,7 @@ alias gh="echo 'gi >> git init\nga >> git add\ngaa >> git add -A\ngc >> git comm
 alias ls="colorls --sd"
 alias ll="colorls -Al --sd"
 alias l="colorls -A --sd"
+alias llg="colorls -Al | grep"
 alias lh="echo 'ls >> colorls --sd\nll >> colorls=Al --sd\nl >> colorls -A --sd'"
 
 # ProtonVPN
@@ -60,7 +61,10 @@ alias vpnh="echo 'vpn >> sudo protonvpn\nvpni >> sudo protonvpn init\nvpnc >> su
 
 # Custom
 alias zshrc="vim ~/.zshrc"
-
+alias joy="ll | nms | lolcat"
+alias testnet="ping google.com -c 3"
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias clear_history='rm ~/.zsh_history'
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
