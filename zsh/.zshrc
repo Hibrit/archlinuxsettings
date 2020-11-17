@@ -64,7 +64,10 @@ alias zshrc="vim ~/.zshrc"
 alias joy="ll | nms | lolcat"
 alias testnet="ping google.com -c 3"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias clear_history='rm ~/.zsh_history'
+alias clear_history="rm ~/.zsh_history"
+alias chillpop='mpv "https://www.youtube.com/watch?v=7NOSDKb0HlU"'
+alias activate='source ./venv/bin/activate'
+
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
