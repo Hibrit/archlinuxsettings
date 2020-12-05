@@ -67,6 +67,7 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias clear_history="rm ~/.zsh_history"
 alias chillpop='mpv "https://www.youtube.com/watch?v=7NOSDKb0HlU"'
 alias activate='source ./venv/bin/activate'
+alias mkvenv='python -m venv venv'
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
