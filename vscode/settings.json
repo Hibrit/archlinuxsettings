@@ -1,7 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
@@ -12,6 +11,15 @@
     "editor.renderWhitespace": "all",
     "editor.multiCursorModifier": "alt",
     "keyboard.dispatch": "keyCode",
-    "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "editor.wordWrap": "on",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.languageServer": "Pylance",
+    "editor.semanticHighlighting.enabled": true,
 }
