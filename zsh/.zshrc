@@ -8,8 +8,7 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/home/hibrit/.oh-my-zsh"
 
-# Path variable
-export PATH=~/.gem/ruby/2.7.0/bin:$PATH
+export PATH=~/.passman:$PATH
 
 plugins=(
     archlinux
@@ -39,8 +38,10 @@ alias gpl="git pull origin master"
 alias gs="git status"
 alias grr="git remote remove origin"
 alias gra="git remote add origin"
+alias gcreateb="git branch"
+alias gchangeb="git checkout"
 alias gcommit="git add -A && git commit -m '.' && git push origin master"
-alias gh="echo 'gi >> git init\nga >> git add\ngaa >> git add -A\ngc >> git commit\ngca >> git commit -a\ngp >> git push origin master\ngpl >> git pull origin master\ngs >> git status\ngrr >> git remote remove origin\ngra >> git remote add origin\ngcommit >> git add -A && git commit -m '.' && git push origin master'"
+alias gh="echo 'gi >> git init\nga >> git add\ngaa >> git add -A\ngc >> git commit\ngca >> git commit -a\ngp >> git push origin master\ngpl >> git pull origin master\ngs >> git status\ngrr >> git remote remove origin\ngra >> git remote add origin\ngcreateb >> 'git branch'\ngchangeb >> 'git checkout'\ngcommit >> git add -A && git commit -m '.' && git push origin master'"
 
 # ls alises
 alias ls="colorls --sd"
