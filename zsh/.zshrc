@@ -9,6 +9,7 @@ fi
 export ZSH="${HOME}/.oh-my-zsh"
 
 export PATH=~/.passman:$PATH
+export PATH=~/.scripts:$PATH
 
 plugins=(
     archlinux
@@ -18,7 +19,6 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     copydir
-    zsh_reload
     thefuck
     fzf
 )
@@ -50,16 +50,6 @@ alias l="colorls -A --sd"
 alias llg="colorls -Al | grep"
 alias lh="echo 'ls >> colorls --sd\nll >> colorls=Al --sd\nl >> colorls -A --sd'"
 
-# ProtonVPN
-alias vpn="sudo protonvpn"
-alias vpni="sudo protonvpn init"
-alias vpnc="sudo protonvpn c"
-alias vpncf="sudo protonvpn c -f"
-alias vpnp="sudo protonvpn c --cc de"
-alias vpnd="sudo protonvpn d"
-alias vpns="sudo protonvpn s"
-alias vpnh="echo 'vpn >> sudo protonvpn\nvpni >> sudo protonvpn init\nvpnc >> sudo protonvpn c\nvpncf >> sudo protonvpn c -f\nvpnp >> sudo protonvpn c --cc de\nvpnd >> sudo protonvpn d\nvpns >> sudo protonvpn s'"
-
 # Custom
 alias zshrc="vim ~/.zshrc"
 alias joy="ll | nms | lolcat"
@@ -69,8 +59,10 @@ alias clear_history="rm ~/.zsh_history"
 alias chillpop='mpv "https://www.youtube.com/watch?v=7NOSDKb0HlU"'
 alias activate='source ./venv/bin/activate'
 alias mkvenv='python -m venv venv'
+alias src='exec zsh'
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+

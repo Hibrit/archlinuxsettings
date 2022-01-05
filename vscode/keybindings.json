@@ -81,5 +81,13 @@
     {
         "key": "f5",
         "command": "python.execInTerminal"
+    },
+    {
+        "key": "alt+numpad8",
+        "command": "editor.action.insertCursorAbove"
+    },
+    {
+        "key": "alt+numpad2",
+        "command": "editor.action.insertCursorBelow"
     }
 ]
