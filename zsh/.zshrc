@@ -10,6 +10,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 
 export PATH=~/.passman:$PATH
 export PATH=~/.scripts:$PATH
+export PATH=~/.passman_profelis:$PATH
 
 plugins=(
     archlinux
@@ -58,8 +59,13 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias clear_history="rm ~/.zsh_history"
 alias chillpop='mpv "https://www.youtube.com/watch?v=7NOSDKb0HlU"'
 alias activate='source ./venv/bin/activate'
-alias mkvenv='python -m venv venv'
+alias mkvenv='rm -rf ./venv && python -m venv --upgrade-deps venv && source ./venv/bin/activate'
+alias initvenv='pip install pylint autopep8'
+alias rmvenv='deactivate && rm -rf ./venv'
 alias src='exec zsh'
+alias dirty='watch -n 0.2 "cat /proc/meminfo | grep Dirty"'
+alias slp='mpv https://www.youtube.com/playlist\?list\=PLC-sAnk8UWo6rEVHrgLzc4WxJ0QWOxs2M --no-video --shuffle'
+alias cp='rsync -ah --progress'
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
