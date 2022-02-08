@@ -66,6 +66,8 @@ alias src='exec zsh'
 alias dirty='watch -n 0.2 "cat /proc/meminfo | grep Dirty"'
 alias slp='mpv https://www.youtube.com/playlist\?list\=PLC-sAnk8UWo6rEVHrgLzc4WxJ0QWOxs2M --no-video --shuffle'
 alias cp='rsync -ah --progress'
+alias sshutdown='shutdown -h'
+alias cshutdown='shutdown -c'
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
