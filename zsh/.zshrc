@@ -56,6 +56,7 @@ alias zshrc="vim ~/.zshrc"
 alias joy="ll | nms | lolcat"
 alias testnet="ping google.com -c 3"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias watch='watch -n .2'
 alias clear_history="rm ~/.zsh_history"
 alias chillpop='mpv "https://www.youtube.com/watch?v=7NOSDKb0HlU"'
 alias activate='source ./venv/bin/activate'
@@ -63,11 +64,14 @@ alias mkvenv='rm -rf ./venv && python -m venv --upgrade-deps venv && source ./ve
 alias initvenv='pip install pylint autopep8'
 alias rmvenv='deactivate && rm -rf ./venv'
 alias src='exec zsh'
-alias dirty='watch -n 0.2 "cat /proc/meminfo | grep Dirty"'
+alias dirty='watch "cat /proc/meminfo | grep Dirty"'
 alias slp='mpv https://www.youtube.com/playlist\?list\=PLC-sAnk8UWo6rEVHrgLzc4WxJ0QWOxs2M --no-video --shuffle'
 alias cp='rsync -ah --progress'
-alias sshutdown='shutdown -h'
+alias sshutdown='shutdown -h 120'
 alias cshutdown='shutdown -c'
+alias lock='cinnamon-screensaver-command --lock'
+alias hibernate='systemctl hibernate'
+alias down='lock && hibernate'
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
