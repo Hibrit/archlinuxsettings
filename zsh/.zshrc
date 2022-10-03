@@ -8,10 +8,6 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
-export PATH=~/.passman:$PATH
-export PATH=~/.scripts:$PATH
-export PATH=~/.passman_profelis:$PATH
-
 plugins=(
     archlinux
     git
@@ -19,7 +15,7 @@ plugins=(
     colored-man-pages
     zsh-autosuggestions
     zsh-syntax-highlighting
-    copydir
+    copypath
     thefuck
     fzf
 )
@@ -28,21 +24,6 @@ source $ZSH/oh-my-zsh.sh
 
 # ------------ Aliases ----------
 
-# Git Commands
-alias gi="git init"
-alias ga="git add"
-alias gaa="git add -A"
-alias gc="git commit"
-alias gca="git commit -a"
-alias gp="git push origin master"
-alias gpl="git pull origin master"
-alias gs="git status"
-alias grr="git remote remove origin"
-alias gra="git remote add origin"
-alias gcreateb="git branch"
-alias gchangeb="git checkout"
-alias gcommit="git add -A && git commit -m '.' && git push origin master"
-alias gh="echo 'gi >> git init\nga >> git add\ngaa >> git add -A\ngc >> git commit\ngca >> git commit -a\ngp >> git push origin master\ngpl >> git pull origin master\ngs >> git status\ngrr >> git remote remove origin\ngra >> git remote add origin\ngcreateb >> 'git branch'\ngchangeb >> 'git checkout'\ngcommit >> git add -A && git commit -m '.' && git push origin master'"
 
 # ls alises
 alias ls="colorls --sd"
@@ -53,7 +34,6 @@ alias lh="echo 'ls >> colorls --sd\nll >> colorls=Al --sd\nl >> colorls -A --sd'
 
 # Custom
 alias zshrc="vim ~/.zshrc"
-alias joy="ll | nms | lolcat"
 alias testnet="ping google.com -c 3"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias watch='watch -n .2'
